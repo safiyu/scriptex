@@ -1,4 +1,4 @@
-A dockerized web gui for executing shell script
+A dockerized web gui for executing shell script.
 
 ## Installation
 
@@ -22,6 +22,13 @@ services:
     ports:
       - '5100:5100'
 ```
+## Environment Variables
+
+| Variable    | Description                                                               |
+|-------------|---------------------------------------------------------------------------|
+| TRUSTED_IPS | List of IP's to whitelist. These IP's will be skipped for authentication  |
+| APP_USER    | Username                                                                  |
+| APP_PASS    | Password                                                                  |
 
 ## License
 
