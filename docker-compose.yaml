@@ -1,0 +1,13 @@
+services:
+  scriptex:
+    container_name: scriptex
+    image: safiyu/scriptex:latest
+    volumes:
+      - /share/scriptorun.sh:/app/scriptorun.sh:ro
+    environment:
+      - TZ=Europe/Paris
+    restart: always
+    healthcheck:
+      disable: false
+    ports:
+      - '5222:5000'
