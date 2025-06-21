@@ -1,5 +1,10 @@
 A dockerized web gui for executing shell script.
 
+## Security
+
+Username and password can be passed through env variables. If not passed, then the default values will be used {username: admin, password: scriptex}
+To avoid brut force attack, 3 invalid logins in 30 mins will block the IP for 10 hours.
+
 ## Installation
 
 Docker compose example:
