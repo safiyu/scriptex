@@ -1,0 +1,6 @@
+# Ignore runtime-generated or sensitive files
+scriptorun.sh
+app/*.log
+*.pyc
+__pycache__/
+.env
